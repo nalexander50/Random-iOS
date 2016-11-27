@@ -8,24 +8,119 @@
 
 /* Begin PBXBuildFile section */
 		01032C371DE27E84003F341E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01032C361DE27E84003F341E /* AppDelegate.swift */; };
-		01032C391DE27E84003F341E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01032C381DE27E84003F341E /* ViewController.swift */; };
 		01032C3C1DE27E84003F341E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01032C3A1DE27E84003F341E /* Main.storyboard */; };
 		01032C3E1DE27E84003F341E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01032C3D1DE27E84003F341E /* Assets.xcassets */; };
 		01032C411DE27E84003F341E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01032C3F1DE27E84003F341E /* LaunchScreen.storyboard */; };
+		01032C491DE28233003F341E /* DieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01032C481DE28233003F341E /* DieViewController.swift */; };
+		013D8DC01DE522D000608C73 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D8DBF1DE522D000608C73 /* ExtensionDelegate.swift */; };
+		01706AF01DE2B02C00B9422D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01706AEE1DE2B02C00B9422D /* Interface.storyboard */; };
+		01706AF21DE2B02C00B9422D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01706AF11DE2B02C00B9422D /* Assets.xcassets */; };
+		01706AF91DE2B02C00B9422D /* RandomWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 01706AF81DE2B02C00B9422D /* RandomWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		01706B0A1DE2B02C00B9422D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01706B091DE2B02C00B9422D /* Assets.xcassets */; };
+		01706B0E1DE2B02C00B9422D /* RandomWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 01706AEC1DE2B02C00B9422D /* RandomWatch.app */; };
+		01706B181DE2B0D600B9422D /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01706B171DE2B0D600B9422D /* Random.swift */; };
+		01706B1A1DE2B6A800B9422D /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01706B171DE2B0D600B9422D /* Random.swift */; };
+		01706B1C1DE2BBAB00B9422D /* DieInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01706B1B1DE2BBAB00B9422D /* DieInterfaceController.swift */; };
+		01A546A21DE3E2020047580E /* RandomStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A546A11DE3E2020047580E /* RandomStatisticsViewController.swift */; };
+		01A546A41DE3E5160047580E /* NumberFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A546A31DE3E5160047580E /* NumberFormatterExtension.swift */; };
+		01A546A61DE3E9260047580E /* StatsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A546A51DE3E9260047580E /* StatsInterfaceController.swift */; };
+		01A546A81DE3EA5A0047580E /* StatsRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A546A71DE3EA5A0047580E /* StatsRowController.swift */; };
+		01F62BAD1DE3ED7600176A54 /* NumberFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A546A31DE3E5160047580E /* NumberFormatterExtension.swift */; };
+		E5F6C184CDDC28E59AF193DC /* Pods_RandomWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85B2D84331694045857BCF8 /* Pods_RandomWatch_Extension.framework */; };
+		FEF5809C7D3586DCC5A1AB41 /* Pods_Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856BCA5713B8D7E236F59EF0 /* Pods_Random.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01706AFA1DE2B02C00B9422D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01032C2B1DE27E84003F341E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01706AF71DE2B02C00B9422D;
+			remoteInfo = "RandomWatch Extension";
+		};
+		01706B0C1DE2B02C00B9422D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01032C2B1DE27E84003F341E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01706AEB1DE2B02C00B9422D;
+			remoteInfo = RandomWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01706B141DE2B02C00B9422D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				01706AF91DE2B02C00B9422D /* RandomWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01706B161DE2B02C00B9422D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				01706B0E1DE2B02C00B9422D /* RandomWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01032C331DE27E84003F341E /* Random.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Random.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01032C361DE27E84003F341E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01032C381DE27E84003F341E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01032C3B1DE27E84003F341E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01032C3D1DE27E84003F341E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01032C401DE27E84003F341E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01032C421DE27E84003F341E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01032C481DE28233003F341E /* DieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieViewController.swift; sourceTree = "<group>"; };
+		013D8DBF1DE522D000608C73 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		01706AEC1DE2B02C00B9422D /* RandomWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01706AEF1DE2B02C00B9422D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		01706AF11DE2B02C00B9422D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01706AF31DE2B02C00B9422D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01706AF81DE2B02C00B9422D /* RandomWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RandomWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01706AFE1DE2B02C00B9422D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		01706B091DE2B02C00B9422D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01706B0B1DE2B02C00B9422D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01706B171DE2B0D600B9422D /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		01706B1B1DE2BBAB00B9422D /* DieInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieInterfaceController.swift; sourceTree = "<group>"; };
+		01A546A11DE3E2020047580E /* RandomStatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomStatisticsViewController.swift; sourceTree = "<group>"; };
+		01A546A31DE3E5160047580E /* NumberFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatterExtension.swift; sourceTree = "<group>"; };
+		01A546A51DE3E9260047580E /* StatsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsInterfaceController.swift; sourceTree = "<group>"; };
+		01A546A71DE3EA5A0047580E /* StatsRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsRowController.swift; sourceTree = "<group>"; };
+		02C1B32CD55766E24FB5D8D5 /* Pods-RandomWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RandomWatch Extension/Pods-RandomWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		253943FEE42A9CC2E908AE38 /* Pods-RandomWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomWatch Extension/Pods-RandomWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		6DC0183BF8D64F24DEC7723B /* Pods-Random.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Random.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Random/Pods-Random.debug.xcconfig"; sourceTree = "<group>"; };
+		856BCA5713B8D7E236F59EF0 /* Pods_Random.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Random.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85B2D84331694045857BCF8 /* Pods_RandomWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1B362511E2150C75D27555 /* Pods-Random.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Random.release.xcconfig"; path = "Pods/Target Support Files/Pods-Random/Pods-Random.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		01032C301DE27E84003F341E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF5809C7D3586DCC5A1AB41 /* Pods_Random.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01706AF51DE2B02C00B9422D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F6C184CDDC28E59AF193DC /* Pods_RandomWatch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16738AF76193F8FDCF0D8C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,7 +134,11 @@
 			isa = PBXGroup;
 			children = (
 				01032C351DE27E84003F341E /* Random */,
+				01706AED1DE2B02C00B9422D /* RandomWatch */,
+				01706AFC1DE2B02C00B9422D /* RandomWatch Extension */,
 				01032C341DE27E84003F341E /* Products */,
+				D35A3EE96DAD4915616917B6 /* Pods */,
+				F008EE034329DC9BF4449D33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				01032C331DE27E84003F341E /* Random.app */,
+				01706AEC1DE2B02C00B9422D /* RandomWatch.app */,
+				01706AF81DE2B02C00B9422D /* RandomWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +156,68 @@
 			isa = PBXGroup;
 			children = (
 				01032C361DE27E84003F341E /* AppDelegate.swift */,
-				01032C381DE27E84003F341E /* ViewController.swift */,
 				01032C3A1DE27E84003F341E /* Main.storyboard */,
 				01032C3D1DE27E84003F341E /* Assets.xcassets */,
 				01032C3F1DE27E84003F341E /* LaunchScreen.storyboard */,
 				01032C421DE27E84003F341E /* Info.plist */,
+				01032C481DE28233003F341E /* DieViewController.swift */,
+				01A546A11DE3E2020047580E /* RandomStatisticsViewController.swift */,
+				01706B171DE2B0D600B9422D /* Random.swift */,
+				01A546A31DE3E5160047580E /* NumberFormatterExtension.swift */,
 			);
 			path = Random;
+			sourceTree = "<group>";
+		};
+		01706AED1DE2B02C00B9422D /* RandomWatch */ = {
+			isa = PBXGroup;
+			children = (
+				01706AEE1DE2B02C00B9422D /* Interface.storyboard */,
+				01706AF11DE2B02C00B9422D /* Assets.xcassets */,
+				01706AF31DE2B02C00B9422D /* Info.plist */,
+			);
+			path = RandomWatch;
+			sourceTree = "<group>";
+		};
+		01706AFC1DE2B02C00B9422D /* RandomWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				01706B1B1DE2BBAB00B9422D /* DieInterfaceController.swift */,
+				01A546A51DE3E9260047580E /* StatsInterfaceController.swift */,
+				01A546A71DE3EA5A0047580E /* StatsRowController.swift */,
+				013D8DBF1DE522D000608C73 /* ExtensionDelegate.swift */,
+				01706B091DE2B02C00B9422D /* Assets.xcassets */,
+				01706B0B1DE2B02C00B9422D /* Info.plist */,
+				01706AFD1DE2B02C00B9422D /* Supporting Files */,
+			);
+			path = "RandomWatch Extension";
+			sourceTree = "<group>";
+		};
+		01706AFD1DE2B02C00B9422D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01706AFE1DE2B02C00B9422D /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D35A3EE96DAD4915616917B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DC0183BF8D64F24DEC7723B /* Pods-Random.debug.xcconfig */,
+				EB1B362511E2150C75D27555 /* Pods-Random.release.xcconfig */,
+				253943FEE42A9CC2E908AE38 /* Pods-RandomWatch Extension.debug.xcconfig */,
+				02C1B32CD55766E24FB5D8D5 /* Pods-RandomWatch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F008EE034329DC9BF4449D33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				856BCA5713B8D7E236F59EF0 /* Pods_Random.framework */,
+				A85B2D84331694045857BCF8 /* Pods_RandomWatch_Extension.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,18 +227,61 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01032C451DE27E84003F341E /* Build configuration list for PBXNativeTarget "Random" */;
 			buildPhases = (
+				12FADBCC086D89D85827C87B /* [CP] Check Pods Manifest.lock */,
 				01032C2F1DE27E84003F341E /* Sources */,
 				01032C301DE27E84003F341E /* Frameworks */,
 				01032C311DE27E84003F341E /* Resources */,
+				694384E8D470BCEABA2AB623 /* [CP] Embed Pods Frameworks */,
+				9B893883F34F896CAC7826D6 /* [CP] Copy Pods Resources */,
+				01706B161DE2B02C00B9422D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				01706B0D1DE2B02C00B9422D /* PBXTargetDependency */,
 			);
 			name = Random;
 			productName = Random;
 			productReference = 01032C331DE27E84003F341E /* Random.app */;
 			productType = "com.apple.product-type.application";
+		};
+		01706AEB1DE2B02C00B9422D /* RandomWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01706B151DE2B02C00B9422D /* Build configuration list for PBXNativeTarget "RandomWatch" */;
+			buildPhases = (
+				01706AEA1DE2B02C00B9422D /* Resources */,
+				01706B141DE2B02C00B9422D /* Embed App Extensions */,
+				E16738AF76193F8FDCF0D8C2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01706AFB1DE2B02C00B9422D /* PBXTargetDependency */,
+			);
+			name = RandomWatch;
+			productName = RandomWatch;
+			productReference = 01706AEC1DE2B02C00B9422D /* RandomWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		01706AF71DE2B02C00B9422D /* RandomWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01706B131DE2B02C00B9422D /* Build configuration list for PBXNativeTarget "RandomWatch Extension" */;
+			buildPhases = (
+				94CBB85D8451B65C44F37034 /* [CP] Check Pods Manifest.lock */,
+				01706AF41DE2B02C00B9422D /* Sources */,
+				01706AF51DE2B02C00B9422D /* Frameworks */,
+				01706AF61DE2B02C00B9422D /* Resources */,
+				B37CAF6E70E5D5AA6E24931E /* [CP] Embed Pods Frameworks */,
+				A0799F30D7A81EE48FE9322C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RandomWatch Extension";
+			productName = "RandomWatch Extension";
+			productReference = 01706AF81DE2B02C00B9422D /* RandomWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,12 +289,24 @@
 		01032C2B1DE27E84003F341E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Nick Alexander";
 				TargetAttributes = {
 					01032C321DE27E84003F341E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7GZ48WN6Q5;
+						LastSwiftMigration = 0810;
+					};
+					01706AEB1DE2B02C00B9422D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7GZ48WN6Q5;
+						LastSwiftMigration = 0810;
+					};
+					01706AF71DE2B02C00B9422D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7GZ48WN6Q5;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -113,6 +324,8 @@
 			projectRoot = "";
 			targets = (
 				01032C321DE27E84003F341E /* Random */,
+				01706AEB1DE2B02C00B9422D /* RandomWatch */,
+				01706AF71DE2B02C00B9422D /* RandomWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,19 +341,158 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01706AEA1DE2B02C00B9422D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01706AF21DE2B02C00B9422D /* Assets.xcassets in Resources */,
+				01706AF01DE2B02C00B9422D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01706AF61DE2B02C00B9422D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01706B0A1DE2B02C00B9422D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12FADBCC086D89D85827C87B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		694384E8D470BCEABA2AB623 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Random/Pods-Random-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94CBB85D8451B65C44F37034 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B893883F34F896CAC7826D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Random/Pods-Random-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0799F30D7A81EE48FE9322C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RandomWatch Extension/Pods-RandomWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B37CAF6E70E5D5AA6E24931E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RandomWatch Extension/Pods-RandomWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01032C2F1DE27E84003F341E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01032C391DE27E84003F341E /* ViewController.swift in Sources */,
+				01A546A41DE3E5160047580E /* NumberFormatterExtension.swift in Sources */,
+				01032C491DE28233003F341E /* DieViewController.swift in Sources */,
 				01032C371DE27E84003F341E /* AppDelegate.swift in Sources */,
+				01A546A21DE3E2020047580E /* RandomStatisticsViewController.swift in Sources */,
+				01706B181DE2B0D600B9422D /* Random.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01706AF41DE2B02C00B9422D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A546A61DE3E9260047580E /* StatsInterfaceController.swift in Sources */,
+				01706B1C1DE2BBAB00B9422D /* DieInterfaceController.swift in Sources */,
+				01F62BAD1DE3ED7600176A54 /* NumberFormatterExtension.swift in Sources */,
+				01706B1A1DE2B6A800B9422D /* Random.swift in Sources */,
+				013D8DC01DE522D000608C73 /* ExtensionDelegate.swift in Sources */,
+				01A546A81DE3EA5A0047580E /* StatsRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01706AFB1DE2B02C00B9422D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01706AF71DE2B02C00B9422D /* RandomWatch Extension */;
+			targetProxy = 01706AFA1DE2B02C00B9422D /* PBXContainerItemProxy */;
+		};
+		01706B0D1DE2B02C00B9422D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01706AEB1DE2B02C00B9422D /* RandomWatch */;
+			targetProxy = 01706B0C1DE2B02C00B9422D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		01032C3A1DE27E84003F341E /* Main.storyboard */ = {
@@ -157,6 +509,14 @@
 				01032C401DE27E84003F341E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		01706AEE1DE2B02C00B9422D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01706AEF1DE2B02C00B9422D /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -176,8 +536,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -199,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -222,8 +584,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -239,9 +603,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -249,23 +614,107 @@
 		};
 		01032C461DE27E84003F341E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC0183BF8D64F24DEC7723B /* Pods-Random.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7GZ48WN6Q5;
 				INFOPLIST_FILE = Random/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexander.Random;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		01032C471DE27E84003F341E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB1B362511E2150C75D27555 /* Pods-Random.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7GZ48WN6Q5;
 				INFOPLIST_FILE = Random/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexander.Random;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		01706B0F1DE2B02C00B9422D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = RandomWatch_Extension;
+				INFOPLIST_FILE = RandomWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexander.Random.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		01706B101DE2B02C00B9422D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = RandomWatch_Extension;
+				INFOPLIST_FILE = RandomWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexander.Random.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		01706B111DE2B02C00B9422D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253943FEE42A9CC2E908AE38 /* Pods-RandomWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 7GZ48WN6Q5;
+				INFOPLIST_FILE = "RandomWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexander.Random.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		01706B121DE2B02C00B9422D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C1B32CD55766E24FB5D8D5 /* Pods-RandomWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 7GZ48WN6Q5;
+				INFOPLIST_FILE = "RandomWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexander.Random.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
@@ -288,6 +737,25 @@
 				01032C471DE27E84003F341E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01706B131DE2B02C00B9422D /* Build configuration list for PBXNativeTarget "RandomWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01706B111DE2B02C00B9422D /* Debug */,
+				01706B121DE2B02C00B9422D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01706B151DE2B02C00B9422D /* Build configuration list for PBXNativeTarget "RandomWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01706B0F1DE2B02C00B9422D /* Debug */,
+				01706B101DE2B02C00B9422D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
