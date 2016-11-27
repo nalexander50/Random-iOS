@@ -23,7 +23,7 @@ class DieViewController: UIViewController {
     
     @IBAction func roll(_ sender: AnyObject) {
         toggleViewStatus()
-        Random.rollDie { (result, bitsLeft, requestsLeft) in
+        Random.rollDie { (result) in
             Async.main {
                 self.result = result
             }

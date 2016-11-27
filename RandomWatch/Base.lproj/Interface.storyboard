@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="16C48b" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XfU-e3-qQ0">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XfU-e3-qQ0">
     <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Roll Die-->
         <scene sceneID="CwM-O9-s7H">
             <objects>
-                <controller identifier="DieScene" title="Roll Die" spacing="10" id="XfU-e3-qQ0" customClass="DieInterfaceController" customModule="RandomWatch_Extension">
+                <controller identifier="DieScene" title="Roll Die" id="XfU-e3-qQ0" customClass="DieInterfaceController" customModule="RandomWatch_Extension">
                     <items>
                         <group width="1" height="0.75" alignment="left" layout="vertical" id="eRa-yw-TsT">
                             <items>
@@ -22,7 +22,7 @@
                                 </label>
                             </items>
                         </group>
-                        <group width="1" height="0.25" alignment="center" verticalAlignment="bottom" id="B7s-m7-ElS">
+                        <group width="1" height="0.20000000000000001" alignment="center" verticalAlignment="center" id="B7s-m7-ElS">
                             <items>
                                 <imageView width="0.25" height="1" alignment="left" image="Done" contentMode="center" id="wJY-UU-7pH"/>
                                 <button width="0.75" height="1" alignment="left" verticalAlignment="center" title="Roll Die" id="CVc-ji-w4U">
@@ -33,44 +33,99 @@
                             </items>
                         </group>
                     </items>
+                    <menu key="menu" id="Bt9-1g-3w1">
+                        <items>
+                            <menuItem title="Usage" icon="info" id="fHO-v7-ehQ">
+                                <connections>
+                                    <action selector="showUsage" destination="XfU-e3-qQ0" id="ixe-Kl-KIt"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="loadingImage" destination="wJY-UU-7pH" id="2xf-o8-qta"/>
                         <outlet property="resultLabel" destination="FjU-sl-RMU" id="k7Q-PD-w7h"/>
+                        <outlet property="rollButton" destination="CVc-ji-w4U" id="ZJC-al-K9o"/>
                         <segue destination="MkE-J9-2rP" kind="relationship" relationship="nextPage" id="aIq-gu-7af"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="293.25"/>
         </scene>
-        <!--Stats-->
-        <scene sceneID="xtQ-x3-m3a">
+        <!--Close-->
+        <scene sceneID="fxc-6H-IMG">
             <objects>
-                <controller identifier="StatsScene" title="Stats" id="MkE-J9-2rP" customClass="StatsInterfaceController" customModule="RandomWatch_Extension">
+                <controller identifier="UsageScene" title="Close" id="f1a-Lm-eDP" customClass="UsageInterfaceController" customModule="RandomWatch_Extension">
                     <items>
-                        <table alignment="left" id="joi-Ha-4jV">
+                        <table alignment="left" id="BF8-yb-ODO">
                             <items>
-                                <tableRow identifier="StatsRow" id="mep-zi-AhS" customClass="StatsRowController" customModule="RandomWatch_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="GW0-EJ-lUP">
+                                <tableRow identifier="UsageRow" id="TCd-On-7fU" customClass="UsageRowController" customModule="RandomWatch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="g5I-kG-7Uf">
                                         <items>
-                                            <label alignment="left" verticalAlignment="center" text="6" textAlignment="left" id="mEE-9z-0oE">
-                                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <label width="1" height="0.5" alignment="left" verticalAlignment="center" text="1,000" id="85O-3F-gLQ">
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                             </label>
-                                            <label alignment="left" verticalAlignment="center" text="Last Roll" textAlignment="left" id="Htq-yV-UXr">
-                                                <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                            <label width="1" height="0.5" alignment="left" verticalAlignment="center" text="API Requests Left" id="ocl-68-KRG">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
                                             </label>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="titleLabel" destination="Htq-yV-UXr" id="ynl-Hs-y4I"/>
-                                        <outlet property="valueLabel" destination="mEE-9z-0oE" id="9tU-fb-HYL"/>
+                                        <outlet property="titleLabel" destination="ocl-68-KRG" id="aaf-9V-xRU"/>
+                                        <outlet property="valueLabel" destination="85O-3F-gLQ" id="CgR-ne-XEW"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <imageView alignment="center" verticalAlignment="center" image="Activity1" contentMode="center" id="vcF-0G-vUx"/>
+                    </items>
+                    <connections>
+                        <outlet property="loadingImage" destination="vcF-0G-vUx" id="9e7-eR-TRc"/>
+                        <outlet property="usageTable" destination="BF8-yb-ODO" id="byl-Fa-7WG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="561"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="xtQ-x3-m3a">
+            <objects>
+                <controller identifier="HistoryScene" title="History" id="MkE-J9-2rP" customClass="HistoryInterfaceController" customModule="RandomWatch_Extension">
+                    <items>
+                        <table alignment="left" id="joi-Ha-4jV" userLabel="History Table">
+                            <items>
+                                <tableRow identifier="HistoryRow" id="mep-zi-AhS" customClass="HistoryRowController" customModule="RandomWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="GW0-EJ-lUP">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="6" textAlignment="left" id="mEE-9z-0oE" userLabel="Roll Label">
+                                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="left" verticalAlignment="center" text="1:15pm, 11/27/2016" textAlignment="left" id="Htq-yV-UXr" userLabel="Time Label">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="Htq-yV-UXr" id="84C-ef-QxV"/>
+                                        <outlet property="rollLabel" destination="mEE-9z-0oE" id="Ndd-jn-hbL"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <menu key="menu" id="3iN-E9-QjW">
+                        <items>
+                            <menuItem title="Usage" icon="info" id="0xq-EN-2vn">
+                                <connections>
+                                    <action selector="showUsage" destination="MkE-J9-2rP" id="hUc-PL-c6a"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
-                        <outlet property="statsTable" destination="joi-Ha-4jV" id="nTA-Xk-ZNi"/>
+                        <outlet property="historyTable" destination="joi-Ha-4jV" id="Idl-EY-xGk"/>
                     </connections>
                 </controller>
             </objects>

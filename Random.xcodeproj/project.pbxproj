@@ -12,6 +12,8 @@
 		01032C3E1DE27E84003F341E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01032C3D1DE27E84003F341E /* Assets.xcassets */; };
 		01032C411DE27E84003F341E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01032C3F1DE27E84003F341E /* LaunchScreen.storyboard */; };
 		01032C491DE28233003F341E /* DieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01032C481DE28233003F341E /* DieViewController.swift */; };
+		0117431B1DEB5FC90080928E /* HistoryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117431A1DEB5FC90080928E /* HistoryInterfaceController.swift */; };
+		0117431D1DEB5FF40080928E /* HistoryRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117431C1DEB5FF40080928E /* HistoryRowController.swift */; };
 		013D8DC01DE522D000608C73 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D8DBF1DE522D000608C73 /* ExtensionDelegate.swift */; };
 		01706AF01DE2B02C00B9422D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01706AEE1DE2B02C00B9422D /* Interface.storyboard */; };
 		01706AF21DE2B02C00B9422D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01706AF11DE2B02C00B9422D /* Assets.xcassets */; };
@@ -21,10 +23,11 @@
 		01706B181DE2B0D600B9422D /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01706B171DE2B0D600B9422D /* Random.swift */; };
 		01706B1A1DE2B6A800B9422D /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01706B171DE2B0D600B9422D /* Random.swift */; };
 		01706B1C1DE2BBAB00B9422D /* DieInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01706B1B1DE2BBAB00B9422D /* DieInterfaceController.swift */; };
-		01A546A21DE3E2020047580E /* RandomStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A546A11DE3E2020047580E /* RandomStatisticsViewController.swift */; };
+		01879B751DEB6B5500DC8E3B /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01879B741DEB6B5500DC8E3B /* DateFormatterExtension.swift */; };
+		01879B761DEB6B5500DC8E3B /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01879B741DEB6B5500DC8E3B /* DateFormatterExtension.swift */; };
+		01879B781DEB71AB00DC8E3B /* UsageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01879B771DEB71AB00DC8E3B /* UsageInterfaceController.swift */; };
+		01879B7A1DEB71B900DC8E3B /* UsageRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01879B791DEB71B900DC8E3B /* UsageRowController.swift */; };
 		01A546A41DE3E5160047580E /* NumberFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A546A31DE3E5160047580E /* NumberFormatterExtension.swift */; };
-		01A546A61DE3E9260047580E /* StatsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A546A51DE3E9260047580E /* StatsInterfaceController.swift */; };
-		01A546A81DE3EA5A0047580E /* StatsRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A546A71DE3EA5A0047580E /* StatsRowController.swift */; };
 		01F62BAD1DE3ED7600176A54 /* NumberFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A546A31DE3E5160047580E /* NumberFormatterExtension.swift */; };
 		E5F6C184CDDC28E59AF193DC /* Pods_RandomWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85B2D84331694045857BCF8 /* Pods_RandomWatch_Extension.framework */; };
 		FEF5809C7D3586DCC5A1AB41 /* Pods_Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856BCA5713B8D7E236F59EF0 /* Pods_Random.framework */; };
@@ -80,6 +83,8 @@
 		01032C401DE27E84003F341E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01032C421DE27E84003F341E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01032C481DE28233003F341E /* DieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieViewController.swift; sourceTree = "<group>"; };
+		0117431A1DEB5FC90080928E /* HistoryInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryInterfaceController.swift; sourceTree = "<group>"; };
+		0117431C1DEB5FF40080928E /* HistoryRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryRowController.swift; sourceTree = "<group>"; };
 		013D8DBF1DE522D000608C73 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		01706AEC1DE2B02C00B9422D /* RandomWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01706AEF1DE2B02C00B9422D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -91,10 +96,10 @@
 		01706B0B1DE2B02C00B9422D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01706B171DE2B0D600B9422D /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		01706B1B1DE2BBAB00B9422D /* DieInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieInterfaceController.swift; sourceTree = "<group>"; };
-		01A546A11DE3E2020047580E /* RandomStatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomStatisticsViewController.swift; sourceTree = "<group>"; };
+		01879B741DEB6B5500DC8E3B /* DateFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		01879B771DEB71AB00DC8E3B /* UsageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsageInterfaceController.swift; sourceTree = "<group>"; };
+		01879B791DEB71B900DC8E3B /* UsageRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsageRowController.swift; sourceTree = "<group>"; };
 		01A546A31DE3E5160047580E /* NumberFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatterExtension.swift; sourceTree = "<group>"; };
-		01A546A51DE3E9260047580E /* StatsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsInterfaceController.swift; sourceTree = "<group>"; };
-		01A546A71DE3EA5A0047580E /* StatsRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsRowController.swift; sourceTree = "<group>"; };
 		02C1B32CD55766E24FB5D8D5 /* Pods-RandomWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RandomWatch Extension/Pods-RandomWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		253943FEE42A9CC2E908AE38 /* Pods-RandomWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomWatch Extension/Pods-RandomWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		6DC0183BF8D64F24DEC7723B /* Pods-Random.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Random.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Random/Pods-Random.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,9 +166,9 @@
 				01032C3F1DE27E84003F341E /* LaunchScreen.storyboard */,
 				01032C421DE27E84003F341E /* Info.plist */,
 				01032C481DE28233003F341E /* DieViewController.swift */,
-				01A546A11DE3E2020047580E /* RandomStatisticsViewController.swift */,
 				01706B171DE2B0D600B9422D /* Random.swift */,
 				01A546A31DE3E5160047580E /* NumberFormatterExtension.swift */,
+				01879B741DEB6B5500DC8E3B /* DateFormatterExtension.swift */,
 			);
 			path = Random;
 			sourceTree = "<group>";
@@ -182,8 +187,10 @@
 			isa = PBXGroup;
 			children = (
 				01706B1B1DE2BBAB00B9422D /* DieInterfaceController.swift */,
-				01A546A51DE3E9260047580E /* StatsInterfaceController.swift */,
-				01A546A71DE3EA5A0047580E /* StatsRowController.swift */,
+				0117431A1DEB5FC90080928E /* HistoryInterfaceController.swift */,
+				0117431C1DEB5FF40080928E /* HistoryRowController.swift */,
+				01879B771DEB71AB00DC8E3B /* UsageInterfaceController.swift */,
+				01879B791DEB71B900DC8E3B /* UsageRowController.swift */,
 				013D8DBF1DE522D000608C73 /* ExtensionDelegate.swift */,
 				01706B091DE2B02C00B9422D /* Assets.xcassets */,
 				01706B0B1DE2B02C00B9422D /* Info.plist */,
@@ -373,7 +380,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		694384E8D470BCEABA2AB623 /* [CP] Embed Pods Frameworks */ = {
@@ -403,7 +410,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9B893883F34F896CAC7826D6 /* [CP] Copy Pods Resources */ = {
@@ -460,8 +467,8 @@
 			files = (
 				01A546A41DE3E5160047580E /* NumberFormatterExtension.swift in Sources */,
 				01032C491DE28233003F341E /* DieViewController.swift in Sources */,
+				01879B751DEB6B5500DC8E3B /* DateFormatterExtension.swift in Sources */,
 				01032C371DE27E84003F341E /* AppDelegate.swift in Sources */,
-				01A546A21DE3E2020047580E /* RandomStatisticsViewController.swift in Sources */,
 				01706B181DE2B0D600B9422D /* Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,12 +477,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01A546A61DE3E9260047580E /* StatsInterfaceController.swift in Sources */,
 				01706B1C1DE2BBAB00B9422D /* DieInterfaceController.swift in Sources */,
+				01879B761DEB6B5500DC8E3B /* DateFormatterExtension.swift in Sources */,
 				01F62BAD1DE3ED7600176A54 /* NumberFormatterExtension.swift in Sources */,
+				0117431D1DEB5FF40080928E /* HistoryRowController.swift in Sources */,
+				01879B7A1DEB71B900DC8E3B /* UsageRowController.swift in Sources */,
+				01879B781DEB71AB00DC8E3B /* UsageInterfaceController.swift in Sources */,
 				01706B1A1DE2B6A800B9422D /* Random.swift in Sources */,
+				0117431B1DEB5FC90080928E /* HistoryInterfaceController.swift in Sources */,
 				013D8DC01DE522D000608C73 /* ExtensionDelegate.swift in Sources */,
-				01A546A81DE3EA5A0047580E /* StatsRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +668,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -676,7 +686,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -695,7 +705,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -714,7 +724,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
