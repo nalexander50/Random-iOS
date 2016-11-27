@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.2.0)
+  - AsyncSwift (2.0.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AsyncSwift (from `https://github.com/duemunk/Async.git`, branch `feature/Swift_3.0`)
+  - SwiftyJSON (from `https://github.com/BaiduHiDeviOS/SwiftyJSON.git`, branch `swift3`)
+
+EXTERNAL SOURCES:
+  AsyncSwift:
+    :branch: feature/Swift_3.0
+    :git: https://github.com/duemunk/Async.git
+  SwiftyJSON:
+    :branch: swift3
+    :git: https://github.com/BaiduHiDeviOS/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  AsyncSwift:
+    :commit: 7251f43b5552fc2aca2d026b68d7d2049928616c
+    :git: https://github.com/duemunk/Async.git
+  SwiftyJSON:
+    :commit: de5dc3b1b421805769590d331178551bbb0e5733
+    :git: https://github.com/BaiduHiDeviOS/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  AsyncSwift: d5b7e10134039732f1d28964ea42b75e530023da
+  SwiftyJSON: 6118fb49d7519c4d31a0c1f3d5af936e9047b556
+
+PODFILE CHECKSUM: 03a21816bc452601a1363718374db328fdaff986
+
+COCOAPODS: 1.1.1
